@@ -18,6 +18,8 @@ public class ConversorFahrenheit {
 
         System.out.printf("|       %.2f°F equivalem a %.2f°C       \n", grausFah, resultado);
         System.out.println("|----------------------------------------|");
+
+        digite.close();
     }
 
 }

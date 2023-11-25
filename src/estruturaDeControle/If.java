@@ -7,12 +7,14 @@ public class If {
         Scanner entry = new Scanner(System.in);
 
         System.out.print("Você tem quantos anos? ");
-        Integer idade = entry.nextInt();
+        int idade = entry.nextInt();
 
         if(idade < 18)
             System.out.printf("Ainda faltam %d anos para que você possa dirigir", 18 - idade);
         if(idade >= 18)
             System.out.println("Você já tem idade para dirigir.");
+
+        entry.close();
     }
 }
 /*Anotações:

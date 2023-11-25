@@ -18,5 +18,5 @@ public class If {
 /*Anotações:
     -> "if" é uma estrutura condicional.
     -> Para que um código que esteja dentro do if seja executado ou não, é necessário que a expressão dentro do 'if' retorne um valor booleano.
-    -> Se o resultado do IF for false, o código não será usado; se for verdadeiro, o código será executado.
+    -> Se o resultado do IF for false, o código não será usado; se for true, o código será executado.
 */

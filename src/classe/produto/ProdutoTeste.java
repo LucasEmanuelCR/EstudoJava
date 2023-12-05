@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class ProdutoTeste {
     public static void main(String[] args) {
-        // Utilizo a classe Scanner para receber os dados do usuário
+        // Utilizo a classe Scanner para receber os dados do usuário.
         Scanner digite = new Scanner(System.in);
 
-        // Instâncio um objeto do tipo Produto e solicito que o usuário realize o cadastro das informações
+        // Instâncio um objeto do tipo Produto e solicito que o usuário realize o cadastro das informações.
         Produto produto1 = new Produto();
         System.out.println("Informe sua lista de compra");
         System.out.println("Informações do primeiro produto comprado:  ");
@@ -19,7 +19,7 @@ public class ProdutoTeste {
         produto1.desconto = digite.nextDouble();
         digite.nextLine();
 
-        // Instâncio um segundo objeto do tipo Produto e solicito que o usuário realize o cadastro das informações
+        // Instâncio um segundo objeto do tipo Produto e solicito que o usuário realize o cadastro das informações.
         var produto2 = new Produto();
         System.out.println("Informações do segundo produto comprado:  ");
         System.out.print("Nome: ");
@@ -29,13 +29,13 @@ public class ProdutoTeste {
         System.out.print("Desconto: ");
         produto2.desconto = digite.nextDouble();
 
-        // Apresento o valor dos produtos listados, a soma do valor bruto e o total após os descontos em cada produto
+        // Apresento o valor dos produtos listados, a soma do valor bruto e o total após os descontos em cada produto.
         System.out.println("Os prtoodus comprados");
         System.out.printf("Produtos na lista: %s e %s. \n", produto1.nome, produto2.nome);
         System.out.printf("Valor bruto da compra: R$%.2f.\n", produto1.valor + produto2.valor);
         System.out.printf("Valor com os desconto de cada produto: R$%.2f.\n", (produto1.valor * produto1.desconto) + (produto2.valor * produto2.desconto));
 
-        // Fechar o Scanner após o uso para evitar vazamento de recursos
+        // Fechar o Scanner após o uso para evitar vazamento de recursos.
         digite.close();
     }
 }

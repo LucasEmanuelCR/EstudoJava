@@ -16,6 +16,7 @@ public class Produto {
     -> Além disso, uma classe pode ser vista como uma estrutura de dados que define o comportamento e os atributos de um objeto.
     -> Um objeto, ou instância, é um dado criado por uma classe.
     -> Membros de uma classe incluem: variáveis, constantes, construtores, métodos e classes internas.
-    -> Existem variáveis, constantes, classes e objetos que pertencem à classe, assim como existem aqueles que pertencem a uma instância específica da classe (ou seja, a um objeto).
+    -> Existem variáveis, constantes, classes e objetos que pertencem à classe, assim como existem aqueles que pertencem
+    a uma instância específica da classe (ou seja, a um objeto).
     -> Para acessar um membro da classe ou um membro do objeto, utiliza-se o operador ponto (.), também conhecido como notação ponto.
 */

@@ -5,4 +5,10 @@ public class Data {
     int dia;
     int mes;
     int ano;
+
+    // Crio um método onde concatenará o dia o mês e o ano, e retornará a data formatada
+    String obterDataFormatada(){
+        return String.format("%d/%d/%d", dia, mes, ano
+        );
+    }
 }

@@ -15,7 +15,7 @@ public class TesteData {
         int idade = anoAtual - data1.ano;
 
         // Apresentando ao usuário as informações da primeira data de nascimento e idade
-        System.out.printf("Data de nacimento: %d/0%d/%d", data1.dia, data1.mes, data1.ano);
+        System.out.printf("Data de nacimento: %s", data1.obterDataFormatada());
         System.out.printf("\nO usuário possui %d anos", idade);
 
         // Instanciando um segundo objeto do tipo Data e atribuindo valores aos atributos para representar outra data de nascimento
@@ -29,7 +29,7 @@ public class TesteData {
         int idade2 = anoAtual - data2.ano;
 
         // Apresentando ao usuário as informações da segunda data de nascimento e idade
-        System.out.printf("\nData de nacimento: %d/0%d/%d", data2.dia, data2.mes, data2.ano);
+        System.out.printf("\nData de nacimento: %s", data2.obterDataFormatada());
         System.out.printf("\nO usuário possui %d anos", idade2);
 
     }

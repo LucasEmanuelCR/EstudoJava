@@ -30,10 +30,11 @@ public class ProdutoTeste {
         produto2.desconto = digite.nextDouble();
 
         // Apresento o valor dos produtos listados, a soma do valor bruto e o total após os descontos em cada produto.
-        System.out.println("Os prtoodus comprados ");
+        System.out.println("------------------------------");
         System.out.printf("Produtos na lista: %s e %s. \n", produto1.nome, produto2.nome);
         System.out.printf("Valor bruto da compra: R$%.2f.\n", produto1.valor + produto2.valor);
-        System.out.printf("Valor com os desconto de cada produto: R$%.2f.\n", (produto1.valor * produto1.desconto) + (produto2.valor * produto2.desconto));
+        System.out.printf("Valor com os desconto de cada produto: R$%.2f.\n",
+                produto1.precoComDesconto() + produto2.precoComDesconto());
 
         // Fechar o Scanner após o uso para evitar vazamento de recursos.
         digite.close();

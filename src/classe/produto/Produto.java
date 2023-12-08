@@ -5,6 +5,12 @@ public class Produto {
     String nome;
     double valor;
     double desconto;
+
+    //Crio um método que receberá o valor do produto e seu respectivo desconto, e retornará o valor menos o desconto.
+    double precoComDesconto(){
+        return valor * (1 - desconto);
+    }
+
 }
 
 /*Anotações das aulas teóricas 88 até a aula 93:

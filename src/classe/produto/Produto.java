@@ -6,11 +6,20 @@ public class Produto {
     double valor;
     double desconto;
 
+    Produto(String nomeIncicial, double precoInicial){
+        nome = nomeIncicial;
+        valor = precoInicial;
+    }
+    Produto(String nomeIncicial, double precoInicial, double descontoInicial){
+        nome = nomeIncicial;
+        valor = precoInicial;
+        desconto = descontoInicial;
+    }
+
     //Crio um método que receberá o valor do produto e seu respectivo desconto, e retornará o valor menos o desconto.
     double precoComDesconto(){
         return valor * (1 - desconto);
     }
-
 }
 
 /*Anotações das aulas teóricas 88 até a aula 93:

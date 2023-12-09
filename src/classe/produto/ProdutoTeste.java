@@ -7,34 +7,24 @@ public class ProdutoTeste {
         // Utilizo a classe Scanner para receber os dados do usuário.
         Scanner digite = new Scanner(System.in);
 
-        // Instâncio um objeto do tipo Produto e solicito que o usuário realize o cadastro das informações.
-        Produto produto1 = new Produto();
-        System.out.println("Informe sua lista de compra");
-        System.out.println("Informações do primeiro produto comprado:  ");
-        System.out.print("Nome: ");
-        produto1.nome = digite.nextLine();
-        System.out.print("Valor: ");
-        produto1.valor = digite.nextDouble();
-        System.out.print("Desconto: ");
-        produto1.desconto = digite.nextDouble();
-        digite.nextLine();
+        // Instâncio um objeto do tipo Produto informando no construtor nome e valor.
+        Produto produto1 = new Produto("Computador", 10000.00);
+        // Instâncio um objeto do tipo Produto informando no construtor nome, valor e desconto.
+        var produto2 = new Produto("Celular", 2500.00, 0.5);
 
-        // Instâncio um segundo objeto do tipo Produto e solicito que o usuário realize o cadastro das informações.
-        var produto2 = new Produto();
-        System.out.println("Informações do segundo produto comprado:  ");
-        System.out.print("Nome: ");
-        produto2.nome = digite.nextLine();
-        System.out.print("Valor: ");
-        produto2.valor = digite.nextDouble();
-        System.out.print("Desconto: ");
-        produto2.desconto = digite.nextDouble();
+        produto1.desconto = 0.5;
 
-        // Apresento o valor dos produtos listados, a soma do valor bruto e o total após os descontos em cada produto.
-        System.out.println("------------------------------");
-        System.out.printf("Produtos na lista: %s e %s. \n", produto1.nome, produto2.nome);
-        System.out.printf("Valor bruto da compra: R$%.2f.\n", produto1.valor + produto2.valor);
-        System.out.printf("Valor com os desconto de cada produto: R$%.2f.\n",
-                produto1.precoComDesconto() + produto2.precoComDesconto());
+        //Apreseto as informções de cada produto
+        System.out.println("1° Produto: " + produto1.nome);
+        System.out.println("Valor: R$" + produto1.valor);
+        System.out.println("Desconto: " + (produto1.desconto * 100) + "%");
+        System.out.println("Valor com desconto: " + produto1.precoComDesconto());
+
+
+        System.out.println("\n2° Produto: " + produto2.valor);
+        System.out.println("Valor: R$" + produto2.valor);
+        System.out.println("Desconto: " + (produto2.desconto * 100) + "%");
+        System.out.println("Valor com desconto: " + produto2.precoComDesconto());
 
         // Fechar o Scanner após o uso para evitar vazamento de recursos.
         digite.close();

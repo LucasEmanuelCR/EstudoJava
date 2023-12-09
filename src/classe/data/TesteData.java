@@ -5,11 +5,8 @@ public class TesteData {
 
         final int anoAtual = 2023;
 
-        // Instanciando um objeto do tipo Data e atribuindo valores aos atributos para representar a data de nascimento
+        // Instanciando um objeto do tipo Data utilizando o construtor padrão
         Data data1 = new Data();
-        data1.dia = 10;
-        data1.mes = 05;
-        data1.ano = 2004;
 
         // Calculando a idade com base no ano de nascimento informado
         int idade = anoAtual - data1.ano;
@@ -19,11 +16,7 @@ public class TesteData {
         System.out.printf("\nO usuário possui %d anos", idade);
 
         // Instanciando um segundo objeto do tipo Data e atribuindo valores aos atributos para representar outra data de nascimento
-        Data data2 = new Data();
-
-        data2.dia = 11;
-        data2.mes = 8;
-        data2.ano = 2005;
+        Data data2 = new Data(11, 8, 2005);
 
         // Calculando a idade com base no ano de nascimento informado
         int idade2 = anoAtual - data2.ano;

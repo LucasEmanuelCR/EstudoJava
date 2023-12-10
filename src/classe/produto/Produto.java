@@ -1,19 +1,15 @@
 package classe.produto;
 
-// Crio uma classe chamada Produto, com os atributos nome, valor e desconto.
+// Crio uma classe chamada Produto, com os atributos de objeto nome e valor e o atributo de classe desconto.
 public class Produto {
     String nome;
     double valor;
-    double desconto;
+    static double desconto = 0.25;
 
+    // Crio um construtor onde recebe o nome e o valor do objeto em seus parametros
     Produto(String nomeIncicial, double precoInicial){
         nome = nomeIncicial;
         valor = precoInicial;
-    }
-    Produto(String nomeIncicial, double precoInicial, double descontoInicial){
-        nome = nomeIncicial;
-        valor = precoInicial;
-        desconto = descontoInicial;
     }
 
     //Crio um método que receberá o valor do produto e seu respectivo desconto, e retornará o valor menos o desconto.

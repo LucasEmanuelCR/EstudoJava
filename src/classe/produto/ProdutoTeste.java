@@ -9,10 +9,8 @@ public class ProdutoTeste {
 
         // Instâncio um objeto do tipo Produto informando no construtor nome e valor.
         Produto produto1 = new Produto("Computador", 10000.00);
-        // Instâncio um objeto do tipo Produto informando no construtor nome, valor e desconto.
-        var produto2 = new Produto("Celular", 2500.00, 0.5);
-
-        produto1.desconto = 0.5;
+        // Instâncio um objeto do tipo Produto informando no construtor nome e valor
+        var produto2 = new Produto("Celular", 2509.05);
 
         //Apreseto as informções de cada produto
         System.out.println("1° Produto: " + produto1.nome);
@@ -21,6 +19,10 @@ public class ProdutoTeste {
         System.out.println("Valor com desconto: " + produto1.precoComDesconto());
 
 
+        // Altero o desconto, assim alterando o valor do atributo da classe.
+        Produto.desconto = 0.69;
+
+        //Apreseto as informções de cada produto
         System.out.println("\n2° Produto: " + produto2.valor);
         System.out.println("Valor: R$" + produto2.valor);
         System.out.println("Desconto: " + (produto2.desconto * 100) + "%");

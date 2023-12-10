@@ -20,7 +20,7 @@ public class AreaCirc {
 
  -   Os membros de uma classe são valores que estão associados à classe e são compartilhados por todas as instâncias.
 
- -   Para indicar ao Java que um membro pertence à classe, utiliza-se a palavra-chave 'static'
+ -  Para indicar ao Java que um membro pertence à classe, utiliza-se a palavra-chave 'static'
 
  -   Quando o membro pertence ao objeto, só teremos acesso a esse membro quando instanciarmos um objeto.
 

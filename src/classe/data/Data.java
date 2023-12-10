@@ -8,20 +8,20 @@ public class Data {
 
     // Crio um construtor padrão que ao ser utilizado ira atribuir um dia, mes e ano padrão
     Data (){
-        dia = 1;
-        mes = 1;
-        ano = 1970;
+        this(1, 1, 1970); // Utilizo 'this' como fução para chamar outro construtor
     }
     //Crio um construtor que receberá um dia, mes e ano
     Data (int dia, int mes, int ano){
-        this.dia = dia;
+        this.dia = dia; // Utilizo 'this' para referenciar o atributo do objeto que está sendo criado
         this.mes = mes;
         this.ano = ano;
     }
 
     // Crio um método onde concatenará o dia o mês e o ano, e retornará a data formatada
     String obterDataFormatada(){
-        return String.format("%d/%d/%d", dia, mes, ano
-        );
+        return String.format("%d/%d/%d", dia, mes, ano);
     }
 }
+
+/*-> A palabra this serve para referencir um objeto
+-> Também é possível utilizar this como fução para chamar um construtor dentro de outro construtor*/

@@ -1,6 +1,6 @@
 package oo.composicao.desafio;
 
-public class Teste {
+public class Main {
     public static void main(String[] args) {
         System.out.println("Oi");
 
@@ -27,6 +27,5 @@ public class Teste {
         compra1.novoCliente(cliente1);
 
         System.out.printf("No tatal as compras do cliente %s ficou R$%f", cliente1.nome, cliente1.obterValorTotalCompras());
-
     }
 }

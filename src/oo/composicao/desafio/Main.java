@@ -1,31 +1,26 @@
 package oo.composicao.desafio;
 
+//Desafio proposto para colocar em pratica meus conhecimentos de composição
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Oi");
 
         Cliente cliente1 = new Cliente("Lucas");
 
-        Produto produto1 = new Produto("Arroz", 22.99);
-        Produto produto2 = new Produto("Feijão", 19.99);
-        Produto produto3 = new Produto("Leite", 5.99);
-        Produto produto4 = new Produto("Ovo", 1.50);
-
-        Item item1 = new Item(produto1, 1);
-        Item item2 = new Item(produto2, 2);
-        Item item3 = new Item(produto3, 9);
-        Item item4 = new Item(produto4, 30);
-
         Compra compra1 = new Compra();
+        compra1.adcionarNovoItem(new Produto("Arroz", 22.99), 1);
+        compra1.adcionarNovoItem(new Produto("Feijão", 19.99), 2);
+        compra1.adcionarNovoItem(new Produto("Leite", 5.99), 9);
+        compra1.adcionarNovoItem(new Produto("Ovo", 1.50), 30);
 
-        compra1.itens.add(item1);
-        compra1.itens.add(item2);
-        compra1.itens.add(item3);
-        compra1.itens.add(item4);
-        compra1.itens.add(item2);
+        Compra compra2 = new Compra();
+        compra2.adcionarNovoItem("Miojo", 5.99, 3);
+        compra2.adcionarNovoItem("Pipoca", 10.67, 4);
 
-        compra1.novoCliente(cliente1);
+        cliente1.adcionarCompra(compra1);
+        cliente1.adcionarCompra(compra2);
 
-        System.out.printf("No tatal as compras do cliente %s ficou R$%f", cliente1.nome, cliente1.obterValorTotalCompras());
+
+        System.out.printf("No tatal as compras do cliente %s ficou R$%.2f", cliente1.nome, cliente1.obterValorTotalCompras());
     }
 }
